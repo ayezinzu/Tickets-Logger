@@ -16,7 +16,7 @@ exports.run = async (client,message,args) => {
         return (reaction.emoji.name === '⬆️' && user.id === message.author.id)
     };
     
-    const collector = logEmbedMessage.createReactionCollector( filter, {time: 15000000 });
+    const collector = logEmbedMessage.createReactionCollector(filter);
     collector.on('collect', async (reaction, user) => {
         await reaction.users.remove(user)
         logNumber++
