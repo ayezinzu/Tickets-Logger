@@ -1,0 +1,16 @@
+{
+  "name": "expon",
+  "version": "1.0.0",
+  "description": "Discord bot for ticket counts",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "ayearts#0003",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv-flow": "^3.2.0",
+    "enmap": "^5.7.0"
+  }
+}
